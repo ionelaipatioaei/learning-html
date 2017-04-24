@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+
+<!--This document is going to explain the basics of HTML.-->
+<!--This document was inspired by SoloLearn app.-->
+<!--www.sololearn.com-->
+
+<html>
+    
+    <!--HTML documents are made up of HTML elements.-->
+    <!--HTML documents consits of nested HTML elements.-->
+    <!--An HTML element is written using a start tag and an end tag, and with the content in between.-->
+    <!--Some HTML elements don't have end tags.-->
+
+    <!--The head contains all of the non-visual elements that make the page work.-->
+    <head>
+        
+        <!--<title> tag is used to define the title-->
+        <title>Learn HTML</title>
+        
+    </head>
+    
+    <!--The body contains  all the visual-structural elements.-->
+    <body>
+        
+        <!--The <p> tag is used to make a pragraph.-->
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        
+        <!--<br /> tag is used to add a single line of text without starting a new paragraph.-->
+        <p>This sentence is going to<br /> be in two rows.</p>
+        
+        <!--<hr /> tag is used to create a horizontal line-->
+        <p>Text before the line.</p>
+        <hr />
+        <p>Text after line.</p>
+        
+        <!--TEXT FORMATING-->
+        <!--Formatting elements were designed to display special types of text.-->
+        <!--Here are some examples-->
+        <p>Normal text.</p>
+        <p><b>Bold text.</b></p>
+        <p><i>Italic text.</i></p>
+        <p><big>Big text.</big></p>
+        <p><small>Small text.</small></p>
+        
+        <!--HEADINGS-->
+        <!--HTML has six level of headings-->
+        <h1>This is the most important heading.</h1>
+        <h6>This is the least important heading.</h6>
+        
+        <!--COMMENTS-->
+        <p>Comments aren't displayed by browser.</p>
+        <!--You can't see this text in browser.-->
+        
+        <!--ATTRIBUTES-->
+        <!--Attributes provide additional information about an element or tag, while also modifying them. Most attributes have a value.-->
+        <!--We can use align attribute for <p> tag to align the text-->
+        <p align="center">This text is aligned to center.</p>
+        
+        <!--Another example is the width attribute.-->
+        <!--We can use pixel or percentages.-->
+        <hr width="100px" />
+        <hr width="20%" />
+        
+        <!--IMAGES-->
+        <!--The <img> tag is used to insert an image. It contains only attributes and doesn't have a closing tag.-->
+        <p align="center"><img src="html5_logo.png" height="100px" width="100px" border="2px" alt="html logo"/></p>
+        <!--You need to put the image location for the src attribute.-->
+        <!--You can change the image size using height and width attributes.-->
+        <!--border attribute defines a border.-->
+        
+        <!--LINKS-->
+        <!--Links are defines using the <a> tag.-->
+        <a href="http://www.google.com" target="_blank">Google</a>
+        <!--Use href attribute to define the link's destination address.-->
+        <!--Use target attribute to specifie where to open the link document-->
+        <!--_blank value is used to open the link in a new window or tab.-->
+        
+        <!--LISTS-->
+        <!--There are two types of lists: Ordered lists and Unordered lists-->
+        <!--An ordered list starts with the <ol> tag and each item is defined by the <li> tag.-->
+        <ol>
+            <li>First item.</li>
+            <li>Second item.</li>
+            <li>Third item.</li>
+        </ol>
+        
+        <!--An unordered list starts with the <ul> tag and each item is defined by the <li> tag.-->
+        <ul>
+            <li>First item.</li>
+            <li>Second item.</li>
+            <li>Third item.</li>
+        </ul>
+        
+        <!--TABLES-->
+        <!--Tables are defined by <table> tag, table rows by <tr> and table columns by <td>-->
+        <table border="1px">
+            <tr>
+                <!--<rowspan> tag is used to define how many rows the column would take.-->
+                <td rowspan="2">Column1</td>
+                <td>Column2</td>
+                <td>column3</td>
+                <td>Column4</td>
+            </tr>
+            <tr>
+                <!--<colspan> tag is used to define how many columns the row would take.-->
+                <td bgcolor="green">Row2</td>
+                <!--This cell is green.-->
+                <td colspan="2" align="center">Row2</td>
+                <!--<td>Row2</td>-->
+            </tr>
+        </table>
+        <!--Every tag can have different attributes.-->
+        <!--You can also use bgcolor to define the background color for a cell.-->
+        
+        <!--ELEMENTS-->
+        <!--In HTML most elements are defined as block level or inline elements.-->
+        <!--Block elements strat from a new line(e.g: <h1>, <ol>, <ul>, <li>, <p>, etc).-->
+        <!--Inline elements are normally displayed without line breaks(e.g: <b>, <a>, <img>, etc).-->
+        <div style="background-color:blue; color:red">
+            <p>Text goes here.</p>
+        </div>
+        <!--<div> tag is a block-level element that is often used as a container for other HTML elements.-->
+        
+        <h4>This text <span style="color:red">ISN'T</span> important!</h4>
+        <!--<span> tag is an inline element that is often used as a container for some text.-->
+        <!--Both <div> and <span> tags ca be used together wih CSS.-->
+        
+        <!--FORMS-->
+        <!--HMTL forms are used to collect information from the user.-->
+        <form>
+            <input type="text" name="username" /> <br />
+            <input type="password" name="password" /> <br />
+            <input type="submit" value="Login" />
+            <!--There are multiple attributes for type.-->
+        </form>
+        
+        <!--COLORS-->
+        <!--HTML colors are expressed as hexadecimal values(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F).-->
+        <!--Colors are displayed in combinations of red, green and blue(RGB). Hex values are witten using the hashtag symbol(#).-->
+        <div style="background-color:#00FF00">
+            <p>This is green.</p>
+        </div>
+        <p><font color="#000099">This text is blue.</font></p>
+        
+        <!--HTML5-->
+        <!--In HTML elements typically belonged in either the block level or inline content model. HTML5 introduces 7 main content models.-->
+        <!--
+        Metadata: Contents that sets up the presentation or behaviour of the rest of the content. These elenets are found in the head of the document: <base>, <link>, <meta>, <noscript>, <script>, <style>, <title>.
+        Embedded: Content that imports other resources into the document: <audio>, <video>, <canvas>, <iframe>, <img>, <math>, <object>, <svg>.
+        Interactive: Content specifically intended for user interaction: <a>, <audio>, <video>, <button>, <details>, <embed>, <iframe>, <img>, <input>, <label>, <object>, <select>, <taxtarea>.
+        Heading: This model has a number of inline elements in common with HTML4: <img>, <span>, <strong>, <label>, <br />, <small>, <sub>, etc.
+        Flow Content: Contains the majority of HTML5 elements that would be included in the normal flow of the document.
+        Sectioning content: Defines the scope of headings, content, navigation and footers: <article>, <aside>, <nav>, <section>. 
+        -->
+        <!--THE <header ELEMENT-->
+        <header>
+            <h1>An important heading.</h1>
+            <h6>A less important heading.</h6>
+        </header>
+        
+        <!--THE <footer> ELEMENT-->
+        <!--Generally we refer to a section located at the very bottom of the web page as the footer.-->
+        <footer>Contact</footer>
+        
+        <!--THE <nav> ELEMENT-->
+        <!--This tag represents a section of a page that links to other pages or to certain sections within the page.-->
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+        
+        <!--THE <article> ELEMENT-->
+        <!--Article is a self-contained, independent piece of content that can be used and distributed separately from the rest of the page or site.-->
+        <!--The <article> element replaces the <div> element.-->
+        <article>
+            <h1>Article title</h1>
+            <p>Article text.</p>
+        </article>
+        
+        <!--THE <section> ELEMENT-->
+        <!--Sections can be used to divide up content within an article.-->
+        <article>
+            <h1>Title1</h1>
+            <section>
+                <h1>Title2</h1>
+                <p>Text1</p>
+            </section>
+        </article>
+        
+        <!--THE <aside> ELEMENT-->
+        <!--<aside> is secondary or tangential content which could be considered separate from but indirectly related to the main content.-->
+        <article>
+            <h1>Title1</h1>
+            <p>Text1</p>
+            <aside>
+                <p>Text2</p>
+            </aside>
+        </article>
+        
+        <!--THE <audio> ELEMENT-->
+        <!--There are two different ways to specify the audio source file's URL.-->
+        <audio src="audio.mp3" controls>Audio isn't supported.</audio> <br />
+        <!--or-->
+        <audio controls>
+            <!--You can use autoplay to play the sound automatically.-->
+            <!--You can use loop to reapeat the sound.-->
+            <source src="audio.mp3" type="audio/mpeg">
+            Audio isn't supported.
+        </audio> <br />
+        <!--If your browser doesn't support the <audio> element the the text between the <audio> tags will be displayed.-->
+        <!--Currently, there are three supported file formats for the <audio> element: MP3, WAV, and OGG.-->
+        
+        <!--THE <video> ELEMENT-->
+        <!--The <video> element is similar to the audio element.-->
+        <!--<video src="video.mp4" controls>Video isn't supported.</video>-->
+        <!--or-->
+        <video controls>
+            <!--You can use autoplay to play the video automatically.-->
+            <!--You can use loop to reapeat the video.-->
+            <source src="video.mp4" type="video/mp4">
+            Video isn't supported.
+        </video>
+        <!--Currently, there are three supported file formats for the <video> element: MP3, WebM, and OGG.-->
+        
+        <!--THE <progress> ELEMENT-->
+        <!--the <progress> element provides the ability to create progress bars on the web.-->
+        <p> Progress:
+        <progress min="0" max="100" value="33"></progress>
+        </p>
+        
+        <!--SVG-->
+        <!--SVG stands for Scalable Vector Graphics and is used to draw shapes with HTML-style markup.-->
+        <!--SVG is not poxel-based, so it can be magnified infinitely with no loss of quality.-->
+        <svg width="400px" height="400px">
+            <circle cx="80" cy="80" r="50" fill="green" />
+            <!--cx pushes the center of the circle further to the right of the screen.-->
+            <!--cy pushes the center of the circle further down the top of the screen.-->
+            <!--r is radius-->
+        </svg>
+        <svg width="800px" height="400px">
+            <rect width="400" height="200" x="100" y="40" fill="red" />
+        </svg>
+        <!--This line doesn't work, I don't know why.-->
+        <svg width="200px" height="100px">
+            <line x1="10" y="10" x2="200" y2="100" fill="green" stroke-width="10px" />
+        </svg>
+        <svg width="400px" height="400px">
+            <ellipse cx="200" cy="100" rx="100" ry="50" fill="green" />
+        </svg>
+        <svg width="400px" height="400px">
+            <polygon points="100 100 200 200 300 0" fill="blue" />
+        </svg>
+        
+        <!--SVG ANIMATIONS-->
+        <!--This doesn't work either :(-->
+        <svg width="400px" height="400px">
+        <ellipse cx="100" cy="100" rx="100" ry="100" fill="pink" />
+            <animate attributeName="cx" from="100" to="200" dur="5s" fill="freeze" repeatCount="2" />
+        </svg>
+        
+        <!--HTML5 FORMS-->
+        <!--Form creation is done in HTML5 the same way as it was in HTML4.-->
+        <form>
+        <label>Your name:</label>
+        <input id="user" name="username" type="text" /> <br />
+            <label for="email">Your e-mail:</label>
+            <input type="text" name="email" placeholder="email@example.com" /> <br/>
+        </form>
+        <!--There are a lot more types of "inputs", search them on the internet!-->
+        
+        <p>This was a quick tutorial for the HTML5 basics.</p>
+        <p>If you want to learn the basics I recommend this site: <a href="http://www.sololearn.com">SoloLearn</a>.</p>
+        
+    </body>
+
+</html>
+
+<!--Written by xLionel775, 24.04.2017-->
